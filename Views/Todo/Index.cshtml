@@ -1,7 +1,8 @@
 @model TodoViewModel;
+@using Humanizer;
 
 @{
-    ViewData["Title"] = "Manage your todo list";
+    ViewData["Title"] = "Zarządzaj swoją listą zadań";
 }
 
 <div class="panel panel-default todo-panel">
@@ -11,8 +12,8 @@
         <thead>
             <tr>
                 <td>&#x2714;</td>
-                <td>Item</td>
-                <td>Due</td>
+                <td>Zadanie</td>
+                <td>Termin</td>
             </tr>
         </thead>
         @foreach (var item in Model.Items)
@@ -20,7 +21,7 @@
             <tr>
                 <td><input type="checkbox" name="@item.Id" value="true" class="done-checkbox"></td>
                 <td>@item.Title</td>
-                <td>@item.DueAt</td>
+                <td>@item.DueAt.Humanize()</td>
             </tr>
         }
     </table>
