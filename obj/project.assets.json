@@ -13122,11 +13122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\LittleASP\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "projectUniqueName": "d:\\Programming\\LittleASP\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
       "projectName": "AspNetCoreTodo",
-      "projectPath": "D:\\Programming\\LittleASP\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "projectPath": "d:\\Programming\\LittleASP\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
       "packagesPath": "C:\\Users\\Andrzej\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\LittleASP\\AspNetCoreTodo\\obj\\",
+      "outputPath": "d:\\Programming\\LittleASP\\AspNetCoreTodo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
