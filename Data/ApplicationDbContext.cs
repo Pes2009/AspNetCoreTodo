@@ -12,9 +12,9 @@ namespace AspNetCoreTodo.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        {
-        }
-
+        {}
+            public DbSet<TodoItem> Items { get; set; }
+            
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
