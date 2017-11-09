@@ -3,7 +3,16 @@ $(document).ready(function() {
 
     // Wire up the Add button to send the new item to the server
     $('#add-item-button').on('click', addItem);
+
+    $("#add-item-title").keydown(function(event) {
+        if (event.keyCode == 13) {
+            $("#add-item-button").click();
+        }
+    });
 })
+
+    
+
 
 function addItem() {
     $('#add-item-error').hide();
