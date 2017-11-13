@@ -7,5 +7,6 @@ namespace AspNetCoreTodo.Models
     {
         [Required]
         public string Title {get; set; }
+        public DateTime Date {get;set;}
     }
 }
