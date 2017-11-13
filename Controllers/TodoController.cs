@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using AspNetCoreTodo.Models;
 using AspNetCoreTodo.Services;
@@ -24,6 +25,16 @@ namespace AspNetCoreTodo.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> MarkDone(Guid id)
+        {
+            if (id == Guid.Empty) return BadRequest();
+
+            var successful = await _todoItemService.MarkDoneAsync(id);
+
+            if(!successful) return BadRequest();
+            
+            return Ok();
+        }
         public async Task<IActionResult> AddItem(NewTodoItem newItem)
         {
             if (!ModelState.IsValid)

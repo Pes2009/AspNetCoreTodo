@@ -1,19 +1,23 @@
 ﻿// Write your JavaScript code.
 $(document).ready(function() {
 
+    // Wire up all of the cehckboxes to run markCompleted()
+    $('.done-checkbox').click(function(event) {
+        markCompleted(event.target);
+    });
+
     // Wire up the Add button to send the new item to the server
-    $('#add-item-button').on('click', addItem);
+    $('#add-item-button').click(addItem);
 
     $("#add-item-title").keydown(function(event) {
         if (event.keyCode == 13) {
             $("#add-item-button").click();
         }
     });
+
 })
 
     
-
-
 function addItem() {
     $('#add-item-error').hide();
     var newTitle = $('#add-item-title').val();
@@ -27,5 +31,14 @@ function addItem() {
             $('#add-item-error').text(firstError);
             $('#add-item-error').show();
         }
+    });
+}
+
+function markCompleted(checkbox) {
+    checkbox.disabled = true;
+
+    $.post('/Todo/MarkDone', { id: checkbox.name }, function() {
+        var row = checkbox.parentElement.parentElement;
+        $(row).addClass('done');
     });
 }
