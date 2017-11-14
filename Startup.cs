@@ -26,12 +26,6 @@ namespace AspNetCoreTodo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication().AddFacebook(options =>
-                {
-                options.AppId = Configuration["Facebook:AppId"];
-                options.AppSecret = Configuration["Facebook:AppSecret"]
-                });
-                
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -42,6 +36,14 @@ namespace AspNetCoreTodo
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<ITodoItemService, TodoItemService>();
+
+            services
+                .AddAuthentication()
+                .AddFacebook(options =>
+                {
+                    options.AppId = Configuration["Facebook:AppId"];
+                    options.AppSecret = Configuration["Facebook:AppSecret"];
+                });
 
             services.AddMvc();
         }

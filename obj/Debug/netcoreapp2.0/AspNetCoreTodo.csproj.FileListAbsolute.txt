@@ -10,3 +10,15 @@ D:\Programming\LittleASP\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.A
 D:\Programming\LittleASP\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.AssemblyInfo.cs
 D:\Programming\LittleASP\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.dll
 D:\Programming\LittleASP\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.pdb
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.csproj.CoreCompileInputs.cache
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.AssemblyInfoInputs.cache
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.AssemblyInfo.cs
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.dll
+F:\DotNet\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.pdb
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\app.db
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.deps.json
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.runtimeconfig.json
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.runtimeconfig.dev.json
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.dll
+f:\DotNet\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.pdb
