@@ -23,6 +23,7 @@ namespace AspNetCoreTodo.Services
                 Id = Guid.NewGuid(),
                 IsDone = false,
                 Title = newItem.Title,
+                MadeAt = DateTime.Now,
                 DueAt = new DateTimeOffset(newItem.Date),
                 OwnerId = user.Id
             };

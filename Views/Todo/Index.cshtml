@@ -13,6 +13,7 @@
             <tr>
                 <td>&#x2714;</td>
                 <td>Zadanie</td>
+                <td>Utworzono</td>
                 <td>Termin</td>
             </tr>
         </thead>
@@ -21,6 +22,7 @@
             <tr>
                 <td><input type="checkbox" name="@item.Id" value="true" class="done-checkbox"></td>
                 <td>@item.Title</td>
+                <td>@item.MadeAt</td>
                 <td>@item.DueAt.Humanize()</td>
             </tr>
         }
